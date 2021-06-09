@@ -1,0 +1,110 @@
+/* Import Fonts */
+@import url(https://fonts.googleapis.com/css?family=Coustard|Open+Sans);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight:400;
+	-webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+	color: #777;
+	background: #000;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Coustard', serif;
+	color:#fff;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+h1{font-size: 5vh; line-height: 1em; padding: 0; margin: 0;text-decoration:underline;}
+h5{font-size: 3vw; line-height: 1em; padding: 0; margin: 0; color: #bbb;}
+
+a {
+	color: #b7b7b7;
+	text-decoration:none;
+	font-weight: normal;
+}
+a:hover {text-decoration:underline;color: #fff;}
+
+p {
+	font-size: 2vh;
+	 line-height: 1.5em;
+	 padding: 0;
+	 margin: 0;
+	text-decoration:none;
+	font-weight: normal;
+	color:#bbb;
+}
+
+#maximage {
+	display:none;
+	position:fixed !important;
+}
+
+.gradient {
+	left:0;
+	height:100%;
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:9;
+}
+
+.show{display: block;}
+.hide{opacity: 0;}
+
+/* Set Page Elements */
+.content {
+	float:left;
+	margin:40px;
+	position:absolute;
+	top:15%;
+	width:60%;
+	z-index:999;
+	-webkit-font-smoothing:antialiased;
+}
+
+
+.low-nav{
+	font-family: 'Coustard', serif;
+	font-size: 5vw;
+	position:fixed;
+	bottom: 3vh;
+	width: 100%;
+	text-align: center;
+z-index:999;
+}
+.low-nav ul li {
+	z-index:999;
+	list-style: none;
+	display: inline;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-left: 1px solid #b7b7b7;
+	border-right: 1px solid #b7b7b7;
+	margin-inline-end: 40px;
+	opacity: .8;
+	background: #393939;
+}
+
+.navtop {
+	position:absolute;
+	top: 0px;
+	right: 1%;
+	z-index:999;
+}
+.navtop ul {margin: 0; margin-top: -5%; padding:0;}
+.navtop ul li{
+	font-size: 3vh;
+	list-style: none;
+	display:block;
+	float: right;
+	background: #393939;
+	padding: 1vw 2.5vw;
+	line-height: normal;
+	margin: 1px;
+	opacity: .8;
+	z-index:999;
+}
+.navtop ul li:hover {opacity: 1;}
